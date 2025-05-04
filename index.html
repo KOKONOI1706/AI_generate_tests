@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Tiếng Anh Lớp 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kiểm Tra Tiếng Anh Lớp 11</h1>
+            <p>Ngữ pháp - Phát âm - Từ vựng - Trọng âm - Đồng nghĩa - Trái nghĩa</p>
+        </header>
+        
+        <div class="main">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen active">
+                <div class="welcome-text">
+                    <h2>Chào mừng bạn đến với bài kiểm tra!</h2>
+                    <p>Chọn chủ đề và mức độ để bắt đầu kiểm tra.</p>
+                </div>
+
+                <div class="selection-container">
+                    <div class="topic-selection">
+                        <h3>Chọn chủ đề:</h3>
+                        <div class="topic-buttons">
+                            <button class="topic-btn" data-topic="Ngữ pháp">Ngữ pháp</button>
+                            <button class="topic-btn" data-topic="Phát âm">Phát âm</button>
+                            <button class="topic-btn" data-topic="Từ vựng">Từ vựng</button>
+                            <button class="topic-btn" data-topic="Trọng âm">Trọng âm</button>
+                            <button class="topic-btn" data-topic="Đồng nghĩa">Đồng nghĩa</button>
+                            <button class="topic-btn" data-topic="Trái nghĩa">Trái nghĩa</button>
+                        </div>
+                    </div>
+
+                    <div class="level-selection">
+                        <h3>Chọn mức độ:</h3>
+                        <div class="level-buttons">
+                            <button class="level-btn" data-level="Nhận biết">Nhận biết</button>
+                            <button class="level-btn" data-level="Thông hiểu">Thông hiểu</button>
+                            <button class="level-btn" data-level="Vận dụng">Vận dụng</button>
+                            <button class="level-btn" data-level="Vận dụng cao">Vận dụng cao</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn start-btn">Bắt đầu kiểm tra</button>
+                </div>
+            </div>
+            
+            <!-- Loading Screen -->
+            <div class="loading-screen">
+                <div class="loading-container">
+                    <h2>Đang tạo câu hỏi...</h2>
+                    <div class="loading-progress">
+                        <div class="loading-bar"></div>
+                    </div>
+                    <p class="loading-text">Vui lòng đợi trong giây lát</p>
+                </div>
+            </div>
+            
+            <!-- Question Screen -->
+            <div class="question-screen">
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                
+                <div class="question-header">
+                    <div class="question-number">Câu hỏi: <span id="current-question">1</span>/<span id="total-questions">1</span></div>
+                    <div class="question-score">Điểm: <span id="question-points">1</span></div>
+                    <div class="question-level">Mức độ: <span id="question-level" class="level-1">Nhận biết</span></div>
+                </div>
+                
+                <div class="question-content" id="question-text">
+                    <!-- Question text will be inserted here -->
+                </div>
+                
+                <div class="options" id="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+                
+                <div class="btn-container">
+                    <button class="btn next-btn" disabled>Câu tiếp theo</button>
+                </div>
+            </div>
+            
+            <!-- Result Screen -->
+            <div class="result-screen">
+                <div class="result-container">
+                    <h2>Kết quả kiểm tra</h2>
+                    <div class="result-score"><span id="final-score">0</span></div>
+                    <button class="btn restart-btn">Làm lại bài kiểm tra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+        
