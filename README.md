@@ -27,5 +27,3 @@ node server.js
 3. Add environment variables:
    - `OPENAI_API_KEY`: Your OpenAI API key
 4. Deploy
-
-The API will be available at: `https://your-app-name.onrender.com` 
